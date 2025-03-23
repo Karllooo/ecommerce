@@ -7,17 +7,32 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
         .container2{
-            padding: 100px;
+            padding: 50px 20px;
         }
         h1, p{
             padding:10px;
             color:black;
         }
+        .hero-section {
+            background: #343a40;
+            padding: 50px 20px;
+        }
+        .hero-section h1, .hero-section p {
+            color: white;
+        }
+        .card {
+            text-align: center;
+        }
+        .btn-primary {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
@@ -26,30 +41,29 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Shop</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Cart</a></li>
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section text-center text-white">
+    <header class="hero-section text-center">
         <div class="container">
             <h1>Welcome to Aetheron Store</h1>
             <p>Find the best deals on premium products</p>
-
         </div>
     </header>
 
     <!-- Product Section -->
-    <section class="container mt-5">
-        <h2 class="text-center mb-4">Featured Products</h2>
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-3">
+    <section class="container mt-4">
+        <h2 class="text-center mb-3">Featured Products</h2>
+        <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="card">
                     <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
                     <div class="card-body">
@@ -59,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="card">
                     <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
                     <div class="card-body">
@@ -69,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-12 col-sm-6 col-md-4">
                 <div class="card">
                     <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
                     <div class="card-body">
@@ -81,81 +95,12 @@
             </div>
         </div>
     </section>
-    <section class="container mt-5">
-    <div class="row g-4 justify-content-center">
-        <div class="col-md-3">
-            <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
-                <div class="card-body">
-                    <h5 class="card-title">Product 4</h5>
-                    <p class="card-text">$29.99</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
-                <div class="card-body">
-                    <h5 class="card-title">Product 5</h5>
-                    <p class="card-text">$39.99</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
-                <div class="card-body">
-                    <h5 class="card-title">Product 6</h5>
-                    <p class="card-text">$49.99</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="container mt-5">
-    <div class="row g-4 justify-content-center">
-        <div class="col-md-3">
-            <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
-                <div class="card-body">
-                    <h5 class="card-title">Product 7</h5>
-                    <p class="card-text">$29.99</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
-                <div class="card-body">
-                    <h5 class="card-title">Product 8</h5>
-                    <p class="card-text">$39.99</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-                <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product">
-                <div class="card-body">
-                    <h5 class="card-title">Product 9</h5>
-                    <p class="card-text">$49.99</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
     <div class="container2"></div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center p-3 mt-5">
-        <p></p>
+    <footer class="bg-dark text-white text-center p-3 mt-4">
+        <p>&copy; 2025 Aetheron Store. All rights reserved.</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
